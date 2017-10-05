@@ -1,0 +1,275 @@
+html, body {
+    margin: 0;
+    /*background-color: #efefef;*/
+    font-family: sans-serif;
+    background: #ffb6c1 url("../content/background/0.jpg") 0 50%;
+    /*background-color: transparent;*/
+    /*background-size: cover;*/
+}
+.wrapper {
+    width: 750px;
+    height: 640px;
+    padding: 20px;
+    margin: 0 auto;
+    /*background-color: #ddd;*/
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+#nickWrapper {
+    display: none;
+}
+.banner {
+    height: 40px;
+    width: 100%;
+    background: transparent;
+}
+.banner p {
+    float: center;
+    vertical-align:middle;
+    display: inline-block;
+}
+.thestatus {
+    height: 40px;
+    width: 100%;
+}
+.thestatus p {
+    float: left;
+    display: inline-block;
+}
+.controls {
+    height: 36px;
+    margin: 0px 0px;
+    /*position: relative;*/
+    position:relative;
+    background-color: #000000;
+}
+/*
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px;
+}*/
+#historyMsg
+{
+  width: 710px;
+  height: 400px;
+  padding:0;
+  /*background-color: #ffffff;*/
+  background:rgba(0, 0, 0, 0.3) none repeat scroll !important;
+  border: 1px solid black;
+  /* for IE */
+  /*filter:alpha(opacity=20);*/
+  background:#000; filter:Alpha(opacity=80);
+  overflow: auto;
+  /* CSS3 standard */
+  /*opacity:0.8;*/
+}
+
+
+
+
+.historyMsg p
+{
+  margin: 30px 40px;
+  color: #000000;
+  font:bold 12px Verdana, Geneva, sans-serif;
+  line-height:1.5;
+   font-weight:bold;
+  position:relative;
+  max-width: 50%;
+}
+#historyMsg img {
+    /*max-width: 50%;*/
+}
+.timespan {
+    color: white;
+}
+.items {
+    height: 30px;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+}
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*end custom file input*/
+
+/*#messageInput {
+    width: 600px;
+    max-width: 600px;
+    height: 75px;
+    max-height: 90px;
+    float:left;
+}*/
+#messageInput
+{
+  width: 600px;
+  max-width: 600px;
+  height: 75px;
+  max-height: 90px;
+  float:left;
+  padding:0;
+  background-color: #ffffff;
+  background:rgba(0, 0, 0, 0.3) none repeat scroll !important;
+  border: 1px solid black;
+  /* for IE */
+  background:#000; filter:Alpha(opacity=80);
+  overflow: auto;
+  /* CSS3 standard */
+  opacity:0.8;
+}
+#sendBtn {
+    width: 110px;
+    height: 75px;
+    float: right;
+    position:relative;
+    left:0px;top:-35px;
+}
+#emojiWrapper {
+    display: none;
+    width: 500px;
+    bottom: 45px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+.emoji{
+    display: inline;
+}
+#avatarWrapper {
+    display: none;
+    width: 500px;
+    bottom: 45px;
+    left:250px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#avatarWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#avatarWrapper img:hover {
+    background-color: blue;
+}
+.avatar{
+    display: inline;
+}
+
+.bubble {
+      padding: 6px;
+      overflow: hidden;
+      position: relative;
+    }
+    .bubble:after {
+      clear: both;
+      content: '';
+    }
+    .bubble a.avatar {
+      display: block;
+      height: 35px;
+      width: 35px;
+      border-radius:50%;
+      overflow: hidden;
+    }
+    .bubble a.avatar > img {
+      width: 100%;
+      height: 100%;
+    }
+    .bubble.left a.avatar {
+      float: left;
+    }
+    .bubble.right a.avatar {
+      float: right;
+    }
+    .bubble .content {
+      width: auto;
+      padding: 0.7em 0.5em;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid;
+      position: relative;
+      display: inline-block;
+      /*overflow:hidden;*/
+      word-wrap:break-word;
+    }
+    .bubble .content:before {
+      content: '';
+      display: inline-block;
+      box-sizing: border-box;
+      width: 12px;
+      height: 12px;
+      border: 1px solid transparent;
+      border-radius: 3px;
+      position: absolute;
+      background-color: inherit;
+      border-right-color: inherit;
+      border-bottom-color: inherit;
+    }
+    .bubble.left {
+      text-align: left;
+    }
+    .bubble.right {
+      text-align: right;
+    }
+    .bubble.left .wrap {
+      margin-left: 56px;
+      margin-right: 56px;
+    }
+    .bubble.left .content {
+        background: #fafafa;
+        border-color: #c6c6c6;
+    }
+    .bubble.left .content:before {
+      left: -6px;
+      top: 16px;
+      transform: rotate(135deg);
+    }
+    .bubble.right .wrap {
+      margin-right: 56px;
+      margin-left: 56px;
+    }
+    .bubble.right .content {
+      background: #b3e866;
+      border-color: #9ab96b;
+      text-align: left;
+    }
+    .bubble.right .content:before {
+      right: -6px;
+      top: 16px;
+      transform: rotate(-45deg);
+    }
