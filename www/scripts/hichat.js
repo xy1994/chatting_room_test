@@ -246,7 +246,7 @@ HiChat.prototype = {
             msg = this._showEmoji(msg);
         if(user != "me" && user != "system"){
             msgToDisplay.style.color = color || '#000';
-            msgToDisplay.innerHTML = /*"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"*/ + user + "</br>" + '<div class="bubble left">'+'<a class="avatar"><img src="'+mysrc+ '" alt/></a>'+ '<div class="wrap">'+'<div class="content" style="max-width: 80%;">' + msg + '</div>'+'</div>'+'</div>';
+            msgToDisplay.innerHTML = /*"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + */user + "</br>" + '<div class="bubble left">'+'<a class="avatar"><img src="'+mysrc+ '" alt/></a>'+ '<div class="wrap">'+'<div class="content" style="max-width: 80%;">' + msg + '</div>'+'</div>'+'</div>';
         }
         if(user == "me"){
             /*msgToDisplay.innerHTML = msg + '<span class="timespan">(' + date + '): </span>' + '<img src="'+mysrc+'"width="30" height="30" style="border-radius:50%;"; />';
